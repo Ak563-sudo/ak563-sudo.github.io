@@ -1,167 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A&K Double Glazing</title>
+    <title>A&K Double Glazing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f6ff;
+            color: #222;
+        }
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f4f7fb;
-        color: #222;
-    }
+        header {
+            background: #005bbb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    /* HEADER / HERO IMAGE */
-    .hero {
-        height: 60vh;
-        background: url("https://images.unsplash.com/photo-1507089947368-19c1da9775ae") center/cover no-repeat;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+        nav {
+            background: #003f7f;
+            padding: 10px;
+            text-align: center;
+        }
 
-    /* Dark overlay */
-    .hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 40, 100, 0.55);
-    }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    .hero-content {
-        position: relative;
-        color: white;
-        padding: 20px;
-    }
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background: linear-gradient(to bottom, #005bbb, #3a8dde);
+            color: white;
+        }
 
-    .hero h1 {
-        font-size: 38px;
-        margin-bottom: 10px;
-        font-weight: bold;
-    }
+        .section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-    .hero p {
-        font-size: 20px;
-        margin: 0;
-    }
+        h2 {
+            color: #005bbb;
+        }
 
-    /* NAV */
-    nav {
-        background: white;
-        padding: 15px;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
+        .footer {
+            background: #003f7f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
 
-    nav a {
-        margin: 0 20px;
-        text-decoration: none;
-        font-weight: bold;
-        color: #004a9f;
-        font-size: 18px;
-    }
+        /* ------- WHATSAPP BUTTON ------- */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+            font-weight: bold;
+        }
 
-    /* SECTIONS */
-    .section {
-        padding: 50px 20px;
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    h2 {
-        color: #004a9f;
-        font-size: 28px;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
-    /* SERVICE BOXES */
-    .services-box {
-        background: white;
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .services-box p {
-        margin: 8px 0;
-        font-size: 17px;
-    }
-
-    /* FOOTER */
-    .footer {
-        background: #002b60;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        margin-top: 40px;
-    }
-</style>
+    </style>
 </head>
 <body>
 
-<!-- HERO IMAGE -->
-<div class="hero">
-    <div class="hero-content">
-        <h1>A&K Double Glazing</h1>
-        <p>Professional Window & Door Installers</p>
-    </div>
-</div>
+<header>
+    <h1>A&K Double Glazing</h1>
+    <p>Professional Window & Door Installers</p>
+</header>
 
-<!-- NAV -->
 <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- SERVICES -->
-<div class="section" id="services">
-    <h2>Our Services</h2>
-
-    <div class="services-box">
-        <p><strong>Window Fitting:</strong> Replacement windows, removal & sealing.</p>
-    </div>
-
-    <div class="services-box">
-        <p><strong>Door Fitting:</strong> Internal & external secure fitting.</p>
-    </div>
-
-    <div class="services-box">
-        <p><strong>Glass Replacement:</strong> Sealed units, accidental damage repairs.</p>
-    </div>
+<div class="hero">
+    <h2>Reliable Installations & Repairs</h2>
+    <p>Serving Southall & surrounding areas — Quality work guaranteed.</p>
 </div>
 
-<!-- ABOUT -->
+<div class="section" id="services">
+    <h2>Our Services</h2>
+    <p><strong>Window Fitting:</strong> Replacement windows, removal & sealing.</p>
+    <p><strong>Door Fitting:</strong> Internal & external secure fitting.</p>
+    <p><strong>Glass Replacement:</strong> Sealed units, accidental damage repairs.</p>
+</div>
+
 <div class="section" id="about">
     <h2>About Us</h2>
     <p><strong>Director:</strong> Sahil Sharma — 3 years experience.</p>
     <p><strong>Installer:</strong> Rahul Sharma — 6 years experience.</p>
-    <p><strong>Company reg:</strong> 16208802</p>
+    <p>Company reg: 16208802</p>
 </div>
 
-<!-- CONTACT -->
 <div class="section" id="contact">
     <h2>Contact</h2>
-    <p><strong>Phone:</strong> 07XXXXXXXXX</p>
-    <p><strong>Email:</strong> example@gmail.com</p>
+    <p><strong>Phone:</strong> 07845056614</p>
+    <p><strong>Phone 2:</strong> 07774467498</p>
+    <p><strong>Email:</strong> akdoubleglazing573@gmail.com</p>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
     © 2025 A&K Double Glazing
 </div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a class="whatsapp-btn" href="https://wa.me/447845056614" target="_blank">
+    WhatsApp Us
+</a>
 
 </body>
 </html>
